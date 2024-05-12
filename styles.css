@@ -23,6 +23,10 @@
     color: var(--white);
 }
 
+html {
+    width: 100vw;
+}
+
 h1,
 h2,
 h3,
@@ -67,7 +71,7 @@ main {
 }
 
 .heroImage {
-    width: 100%;
+    width: 100vw;
     height: 1100px;
 
     display: grid;
@@ -81,17 +85,20 @@ main {
 
 .heroPhone {
     position: absolute;
-    margin-left: 25rem;
-    transform: scale(0.8) rotate(20deg);
+    margin-left: 42rem;
+    margin-top: -10rem;
+    transform: scale(0.3) rotate(20deg);
     filter: drop-shadow(0 1rem 2rem var(--black));
+    z-index: 5;
 }
 
 .heroWordmark {
     position: absolute;
-    margin-left: 8rem;
-    margin-top: 25rem;
-    transform: scale(0.5) rotate(-10deg);
+    margin-left: 33rem;
+    margin-top: 3rem;
+    transform: scale(0.2) rotate(-10deg);
     filter: drop-shadow(0 0 0.5rem var(--black));
+    z-index: 5;
 }
 
 .heroTag {
@@ -127,8 +134,8 @@ main {
     width: 952px;
     height: 536px;
     background-color: grey;
-    position: relative;
-    margin-top: 20rem;
+    position: absolute;
+    margin: 15rem 0 0 10rem; 
 }
 
 .teamTitle {
@@ -231,7 +238,7 @@ footer {
     flex-direction: row;
 
     background-color: var(--hot-pink);
-    height: 536px;
+    padding: 5rem 0;
     gap: 161px;
 
     margin-top: 200px;
@@ -246,7 +253,12 @@ footer {
     margin: 0;
 }
 
-footer>* {
+.footerContent {
+    display: flex;
+    flex-direction: row;
+}
+
+.footerContent>* {
     margin-left: 128px;
     margin-top: 52px;
 }
@@ -305,4 +317,100 @@ ul {
 
 li {
     list-style-type: none;
+}
+
+@media only screen and (max-width: 600px) {
+    :root {
+        --h1: 50px;
+        --h4: 32px;
+        --h5: 16px;
+    }
+
+    .heroPhone {
+        display: none;
+    }
+
+    .heroWordmark {
+        display: none;
+    }
+
+    .heroImage {
+        display: flex;
+        flex-direction: column;
+    }
+    .heroTag {
+        margin-top: 0;
+        margin: 10rem 1rem 0 1rem;
+    }
+
+    .heroButton {
+        margin-left: 1rem;
+    }
+
+    .team {
+        flex-direction: column;
+    }
+
+    .teamMember {
+        margin: 0;
+    }
+
+    .marginTop {
+        margin-top: 0;
+    }
+
+    .features {
+        width: 430px;
+    }
+
+    .featureImage, .featureImageReverse {
+        height: 300px;
+        object-fit: cover;
+        width: 430px;
+    }
+
+    .footerContent {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .featureContainer {
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(2, auto);
+    }
+
+    .featureContainerReverse {
+        flex-direction: column;
+    }
+
+    .phone {
+        display: none;
+    }
+
+    .form, .contact {
+        margin-left: 0px;
+    }
+
+    .video {
+        width: 430px;
+        height: 200px;
+        
+        margin: 40rem auto;
+    }
+
+    footer * {
+        margin: 0 0 0 1rem;
+    }
+
+    li{
+        margin: 0;
+    }
+
+    .teamMember {
+        margin-bottom: 1rem;
+    }
+
+    .emailBox {
+        width: auto;
+    }
 }

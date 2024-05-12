@@ -21,60 +21,71 @@
     <main>
         <div class="heroImage">
             <div class="heroContent">
-                <img src="./images/phone.png" class="heroPhone">
-                <img src="./images/Wordmark.png" class="heroWordmark">
+                <img src="./images/phone.png" class="heroPhone" alt="UNA's login screen">
+                <img src="./images/Wordmark.png" class="heroWordmark" alt="UNA's logo">
+                <video class="video" controls autoplay>
+                    <source src="" type="video/mp4">
+                </video>
             </div>
             <div class="heroTag">
                 <h1>Always Be Connected, Interactivity On the Go.</h1>
-                <p>Experience immersive and customizable discussions, wherever and whenever</p>
+                <p>Download UNA to experience immersive and customizable interactions wherever you go.</p>
             </div>
-            <a class="heroButton">Download Now</a>
+            <a class="heroButton" style="text-decoration: none; color: var(--white);" href="https://www.figma.com/proto/BcY5IQ4sqvQcgoQOcgBIAT/UNA?page-id=275%3A1520&node-id=1112-20642&viewport=-17361%2C-3818%2C0.99&t=1gDTIoXB4xL8N7Sp-1&scaling=scale-down&starting-point-node-id=861%3A17024">Download Now</a>
         </div>
-        <div class="video">Placeholder Video</div>
         <h1 class="teamTitle">UNA Team</h1>
         <div class="team margin">
             <div class="teamMember">
-                <img class="teamImage" alt="a photo of name">
-                <p>UNA Style Guide and Content Developer</p>
+                <img class="teamImage" alt="a photo of Jackie">
+                <!-- <p>UNA Style Guide and Content Developer</p> -->
                 <p class="name">Jackie</p>
             </div>
             <div class="teamMember marginTop">
-                <img class="teamImage" alt="a photo of name">
-                <p>Illustrator & Prototyping</p>
+                <img class="teamImage" alt="a photo of Monica">
+                <!-- <p>Illustrator & Hi-Fi Prototyping</p> -->
                 <p class="name">Monica</p>
             </div>
             <div class="teamMember">
-                <img class="teamImage" alt="a photo of name">
-                <p>Vector Illustrator & Prototyping</p>
+                <img class="teamImage" alt="a photo of Jumi">
+                <!-- <p>Vector Illustrator & Hi-Fi Prototyping</p> -->
                 <p class="name">Jumi</p>
             </div>
             <div class="teamMember marginTop">
-                <img class="teamImage" alt="a photo of name">
-                <p></p>
+                <img class="teamImage" alt="a photo of Nathan">
+                <!-- <p></p> -->
                 <p class="name">Nathan</p>
             </div>
         </div>
         <div class="features">
             <h1 class="title">Features</h1>
             <div class="featureContainer">
-                <img class="featureImage" src="./images/chatting.png" />
-                <img src="./images/phone2.png" style="position: absolute; transform: scale(0.5); z-index: -1; margin: -20rem 0 0 -5rem;">
+                <img class="featureImage" src="./images/chatting.png"
+                    alt="an illustration of 2 cartoon bunnies chatting" />
+                <img src="./images/phone2.png" class="phone"
+                    style="position: absolute; transform: scale(0.5); z-index: -1; margin: -20rem 0 0 -5rem;"
+                    alt="a phone showcasing UNA's avatar customization">
                 <div class="featureDescription">
                     <h1>Customize and Chat!</h1>
                     <p>Strike up a conversation with other users</p>
                 </div>
             </div>
             <div class="featureContainerReverse">
-                <img class="featureImageReverse" src="./images/group.png" />
-                <img src="./images/phone3.png" style="position: absolute; transform: scale(0.5); z-index: -1; margin: -20rem -5rem 0 0;">
+                <img class="featureImageReverse" src="./images/group.png"
+                    alt="an illustration of 3 cartoon bunnies chatting" />
+                <img src="./images/phone3.png" class="phone"
+                    style="position: absolute; transform: scale(0.5); z-index: -1; margin: -20rem -5rem 0 0;"
+                    alt="a phone showcasing UNA's live discussion forum">
                 <div class="featureDescriptionReverse">
                     <h1>Join a Community</h1>
                     <p>Find a posts belonging to niches you enjoy.</p>
                 </div>
             </div>
             <div class="featureContainer">
-                <img class="featureImage" src="./images/talking.png"/>
-                <img src="./images/phone4.png" style="position: absolute; transform: scale(0.5); z-index: -1; margin: -20rem 0 0 -5rem;">
+                <img class="featureImage" src="./images/talking.png"
+                    alt="an illustration of 1 bunny talking to an audience" />
+                <img src="./images/phone4.png" class="phone"
+                    style="position: absolute; transform: scale(0.5); z-index: -1; margin: -20rem 0 0 -5rem;"
+                    alt="a phone showcasing UNA's home page">
                 <div class="featureDescription">
                     <h1>Create Engaging Posts!</h1>
                     <p>Share and find out the thoughts of others. </p>
@@ -84,28 +95,30 @@
     </main>
     <footer>
         <div class="green"></div>
-        <div class="form">
-            <p class="heading">Send Us a Message</p>
-            <form action="mailto:someone@example.com" method="post" enctype="text/plain">
-                <label for="email" class="heading">Your Email</label>
-                <input type="text" name="email" class="" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$">
-                <br>
-                <label for="message" class="heading">Message</label>
-                <textarea type="text" name="message" class="emailBox" size="50"></textarea>
-                <br>
-                <div>
-                    <input type="submit" value="Submit" class="submit">
-                </div>
-            </form>
-        </div>
-        <div class="contact">
-            <p class="heading">Contact</p>
-            <ul>
-                <li>BCIT Educational Project</li>
-                <li>May 16, 2024</li>
-                <li>Project 1 | MDIA 2003</li>
-                <li>Digital Design and Development</li>
-            </ul>
+        <div class="footerContent">
+            <div class="form">
+                <p class="heading">Send Us a Message</p>
+                <form action="mailto:someone@example.com" method="post" enctype="text/plain">
+                    <label for="email" class="heading">Your Email</label>
+                    <input type="text" name="email" class="" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$">
+                    <br>
+                    <label for="message" class="heading">Message</label>
+                    <textarea type="text" name="message" class="emailBox" size="50"></textarea>
+                    <br>
+                    <div>
+                        <input type="submit" value="Submit" class="submit">
+                    </div>
+                </form>
+            </div>
+            <div class="contact">
+                <p class="heading">Contact</p>
+                <ul>
+                    <li>BCIT Educational Project</li>
+                    <li>May 16, 2024</li>
+                    <li>Project 1 | MDIA 2003</li>
+                    <li>Digital Design and Development</li>
+                </ul>
+            </div>
         </div>
     </footer>
 </body>
