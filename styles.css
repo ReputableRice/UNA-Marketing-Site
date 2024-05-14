@@ -73,7 +73,6 @@ main {
 .heroImage {
     width: 100vw;
     height: 1100px;
-
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(2, 1fr);
@@ -81,7 +80,7 @@ main {
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: cover;
-
+    object-fit: cover;
 }
 
 .heroContent {
@@ -173,6 +172,7 @@ main {
     width: 401px;
     height: 326px;
     background-color: grey;
+    border-radius: 30px;
 }
 
 .name {
@@ -241,33 +241,33 @@ main {
 
 footer {
     display: flex;
-    justify-content: left;
+    justify-content: space-between;
     flex-direction: row;
 
     background-color: var(--hot-pink);
-    padding: 5rem 0;
+    padding: 5rem 5rem;
     gap: 161px;
 
     margin-top: 200px;
 }
 
-.green {
-    height: 10px;
-    width: 100%;
-
-    background-color: var(--green);
-    position: absolute;
-    margin: 0;
-}
-
 .footerContent {
+    width: 100%;
     display: flex;
     flex-direction: row;
+    justify-content: space-between;
 }
-
+/*
 .footerContent>* {
     margin-left: 128px;
     margin-top: 52px;
+}
+*/
+
+.footerFormContact {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
 }
 
 .heading {
@@ -278,6 +278,11 @@ form {
     display: flex;
     flex-direction: column;
     margin-top: 20px;
+    
+}
+
+.form {
+    margin-left: 130px;
 }
 
 form input {
@@ -420,4 +425,16 @@ li {
     .emailBox {
         width: auto;
     }
+}
+
+.footerLogo {
+    margin-bottom: 40px;
+}
+
+.socialMediaIcons {
+    margin-top: 40px;
+}
+
+.socialMediaIcons img {
+    padding-right: 30px;
 }
