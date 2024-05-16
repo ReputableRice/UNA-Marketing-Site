@@ -445,6 +445,10 @@ li {
         --h5: 16px;
     }
 
+    .qrCodeContainer {
+        display: none;
+    }
+
     .headerName {
         margin: auto;
     }
